@@ -9,11 +9,11 @@ function Welcome() {
 
     useEffect(() => {
         // validate token or redirect to 404 Page
-        if (token === undefined || token === null){
+        if (typeof(token) === undefined || token === null){
             return history.push("/error");
         };
     }, []);
-    
+
     return (
         <div>
             <NavBar/>

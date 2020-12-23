@@ -1,8 +1,6 @@
-import React, { useEffect } from "react";
-import { useHistory } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import React from 'react'
 
-function Profile() {
+function UpdateProfile() {
     const token = localStorage.getItem("token");
     const history = useHistory();
 
@@ -45,4 +43,4 @@ function Profile() {
     )
 }
 
-export default Profile;
+export default UpdateProfile
