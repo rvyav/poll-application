@@ -17,7 +17,7 @@ function Login() {
         window.location.reload();
     }
 
-    async function UserAuth(){
+    function UserAuth(){
         for (const user of users){
             if (user.email === email){
                 history.push("/welcome");
@@ -67,46 +67,5 @@ function Login() {
         </>
     )
 }
-
-// function Login() {
-//     const [email, setEmail] = useState("");
-//     const [password, setPassword] = useState("");
-
-//     function handleSubmit(e){
-//         e.preventDefault();
-//         alert(`Submitting Data ${email} ${password}`);
-//     }
-
-//     return (
-//         <>
-//         <div className="Top">
-//             Not Registered Yet?
-//             <Link to="/signup">go to SignUp</Link><br/>
-//         </div>
-//         <br/><br/>
-//         <div className="container mt-5">
-//             <div className="Login">
-//                 <form onSubmit={handleSubmit}>
-//                 <label>
-//                     Email:
-//                     <input
-//                         type="text"
-//                         value={email}
-//                         onChange={e => setEmail(e.target.value)}
-//                     />
-//                     Password:
-//                     <input
-//                         type="text"
-//                         value={password}
-//                         onChange={e => setPassword(e.target.value)}
-//                     />
-//                 </label>
-//                 <input type="submit" value="Submit" />
-//                 </form>
-//             </div>
-//         </div>
-//         </>
-//     );
-// }
 
 export default Login;
