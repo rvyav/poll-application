@@ -18,7 +18,7 @@ function SignUp() {
         // window.location.reload();
     }
 
-    async function RegistrationValidation(){
+    function RegistrationValidation(){
         // make sure password fields are matching
         if (fields.password === fields.confirmPassword){
             // ghetto way to simulate a registration Backend
