@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
-import { users }  from "./Data";
 
 function Login() {
     const [email, setEmail] = useState("");
@@ -17,16 +16,24 @@ function Login() {
         window.location.reload();
     }
 
+    // function UserAuth(){
+    //     for (const user of users){
+    //         if (user.email === email){
+    //             history.push("/welcome");
+    //             break
+    //         } else {
+    //             alert("email not found");
+    //             break
+    //         }
+    //     };
+    // }
+
     function UserAuth(){
-        for (const user of users){
-            if (user.email === email){
-                history.push("/welcome");
-                break
-            } else {
-                alert("email not found");
-                break
-            }
-        };
+        if (localStorage.getItem("email") === email){
+            history.push("/welcome");
+        } else {
+            alert("email not found");
+        }
     }
 
     return (
