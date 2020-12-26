@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-// import { users } from './Data';
+import React, { useEffect } from 'react';
 import NavBar from './NavBar';
 import { useHistory } from "react-router-dom";
 

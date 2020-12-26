@@ -24,8 +24,12 @@ function UpdateProfile() {
         localStorage.setItem("firstName", fields.firstName)
         localStorage.setItem("lastName", fields.lastName)
         localStorage.setItem("email", fields.email)
+
+        // redirect to `welcome` page
+        history.push("/profile");
+
         // reload the page
-        window.location.reload();
+        //window.location.reload();
     }
 
     function handleInputChange(e) {
