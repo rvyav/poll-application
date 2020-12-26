@@ -97,7 +97,7 @@ function SignUp() {
                             />
                         </Form.Group>
                         <Button block size="lg" type="submit">
-                            Login
+                            Register
                         </Button>
                     </Form>
                 </div>

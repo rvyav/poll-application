@@ -5,8 +5,9 @@ function Home() {
     return (
         <div>
             <div>Welcome to Home Page</div>
-            <Link to="/about">go to about</Link><br/>
-            <Link to="/login">go to login</Link><br/>
+            <Link to="/login">go to Login</Link><br/>
+            <Link to="/signup">go to Register</Link><br/>
+            
         </div>
     )
 }
