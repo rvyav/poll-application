@@ -4,12 +4,10 @@ import NavBar from './NavBar';
 
 function About() {
     return (
-        <div>
-            <NavBar>
-                <div>About</div>
-                <Link to="/">go to home page</Link>
-            </NavBar>
-        </div>
+        <>
+            <div>About</div>
+            <Link to="/">go to home page</Link>
+        </>
     )
 }
 

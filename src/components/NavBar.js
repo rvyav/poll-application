@@ -9,11 +9,11 @@ function NavBar(props) {
         // log out is so ghetto, I know
         userAuthenticated = (
             <>
-                <Navbar.Brand href="/welcome">Welcome</Navbar.Brand>
+                <Navbar.Brand href="/welcome">Poll-App</Navbar.Brand>
                 <Nav className="mr-auto"></Nav>
+                <Nav.Link href="/welcome">Home</Nav.Link>
                 <Nav.Link href="/create">Create</Nav.Link>
                 <Nav.Link href="/profile">Profile</Nav.Link>
-                <Nav.Link href="/about">About</Nav.Link>
                 <Nav.Link href="/">Log Out</Nav.Link>
             </>
         );
@@ -21,10 +21,11 @@ function NavBar(props) {
     } else {
         userAuthenticated = (
             <>
-                <Navbar.Brand href="/">Home</Navbar.Brand>
+                <Navbar.Brand href="/">Poll-App</Navbar.Brand>
                 <Nav className="mr-auto"></Nav>
                 <Nav.Link href="/login">Login</Nav.Link>
                 <Nav.Link href="/signup">Sign Up</Nav.Link>
+                <Nav.Link href="/about">About</Nav.Link>
             </>
         );
     };

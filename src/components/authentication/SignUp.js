@@ -1,11 +1,11 @@
 import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import { Form, Button } from "react-bootstrap";
-import { useFormFields } from "../Utils";
+import { FormFields } from "../Utils";
 
 function SignUp() {
     const history = useHistory()
-    const [fields, handleFieldChange] = useFormFields({
+    const [fields, handleFieldChange] = FormFields({
         username: "",
         email: "",
         password: "",

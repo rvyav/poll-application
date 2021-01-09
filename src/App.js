@@ -3,7 +3,7 @@ import './App.css';
 import Home from './components/Home';
 import About from './components/About';
 import LogIn from './components/authentication/Login';
-import LogOut from './components/authentication/LogOut';
+// import LogOut from './components/authentication/LogOut';
 import SignUp from './components/authentication/SignUp';
 import Welcome from './components/Welcome';
 import Profile from './components/Profile';
@@ -19,7 +19,6 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/login" component={LogIn} />
-        <Route exact path="/" component={Home} />
         <Route exact path="/signup" component={SignUp} />
         <Route exact path="/welcome" component={Welcome} />
         <Route exact path="/profile" component={Profile} />
